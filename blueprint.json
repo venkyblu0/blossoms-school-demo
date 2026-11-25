@@ -1,0 +1,13 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": { "title": "The Blossoms School — website demo (Design 1 · Heritage)", "author": "Scholr Services" },
+	"landingPage": "/",
+	"preferredVersions": { "php": "8.3", "wp": "latest" },
+	"login": false,
+	"steps": [
+		{ "step": "login", "username": "admin" },
+		{ "step": "installTheme", "themeData": { "resource": "url", "url": "https://raw.githubusercontent.com/venkyblu0/blossoms-school-demo/main/blossoms-heritage.zip" }, "options": { "activate": true } },
+		{ "step": "installPlugin", "pluginData": { "resource": "url", "url": "https://raw.githubusercontent.com/venkyblu0/blossoms-school-demo/main/blossoms-site-content.zip" }, "options": { "activate": true } },
+		{ "step": "runPHP", "code": "<?php require '/wordpress/wp-load.php'; wp_logout();" }
+	]
+}

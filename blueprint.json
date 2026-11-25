@@ -30,6 +30,13 @@
 			"options": {
 				"activate": true
 			}
+		},
+		{
+			"step": "updateUserMeta",
+			"meta": {
+				"show_admin_bar_front": "false"
+			},
+			"userId": 1
 		}
 	]
 }
